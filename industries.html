@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries We Serve | Maruthi Enterprises – Electrical Experts</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/mElogo.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/mElogo.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/mElogo.webp">
+    <!-- SEO meta -->
+    <meta name="description"
+        content="Maruthi Enterprises serves pharmaceutical, food processing, manufacturing, infrastructure, and commercial sectors with tailored electrical solutions.">
+    <!-- Tailwind + Font Awesome + custom styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --maroon: #800000;
+            --gold: #fbbf24;
+            --dark-grey: #1e293b;
+            --light-grey: #f8fafc;
+        }
+
+        .bg-maroon {
+            background-color: var(--maroon);
+        }
+
+        .text-maroon {
+            color: var(--maroon);
+        }
+
+        .border-maroon {
+            border-color: var(--maroon);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .bg-dark-grey {
+            background-color: var(--dark-grey);
+        }
+
+        .text-dark-grey {
+            color: var(--dark-grey);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--maroon);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+
+        .btn-outline-gold {
+            background-color: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-gold:hover {
+            background-color: var(--gold);
+            color: var(--maroon);
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 50;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5f;
+        }
+
+        .hero-industries {
+            background: linear-gradient(100deg, rgba(128, 0, 0, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%), url('images/img1.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .industry-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+            border-radius: 0.75rem 0.75rem 0 0;
+        }
+
+        .card-hover:hover .industry-img {
+            transform: scale(1.05);
+        }
+
+        .badge-industry {
+            background-color: var(--gold);
+            color: var(--maroon);
+            font-size: 0.7rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-dark-grey antialiased">
+
+    <!-- WhatsApp float -->
+    <a href="https://wa.me/918722558698" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header / Navigation (with Industries link) -->
+    <nav class="bg-maroon sticky top-0 z-40 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="images/mElogo.webp" alt="Maruthi Electrical Contractors" class="h-12">
+                </a>
+                <span class="text-white text-sm font-light hidden sm:block">Electrical Contractors</span>
+            </div>
+
+            <!-- Desktop Menu (added Industries) -->
+            <div class="hidden lg:flex space-x-6 text-white font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="supply.html" class="nav-link">Supply</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="clients.html" class="nav-link">Clients</a>
+                <a href="safety.html" class="nav-link">Safety</a>
+                <a href="insights.html" class="nav-link">Insights</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Icon -->
+            <div class="lg:hidden flex items-center">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (hidden by default, includes Industries) -->
+        <div id="mobile-menu"
+            class="lg:hidden bg-maroon px-4 pb-4 closed mobile-menu absolute w-full left-0 top-full shadow-xl transition-transform duration-300"
+            style="transform: translateX(-100%);">
+            <div class="flex flex-col space-y-3 text-white font-medium">
+                <a href="index.html" class="nav-link py-2">Home</a>
+                <a href="about.html" class="nav-link py-2">About</a>
+                <a href="services.html" class="nav-link py-2">Services</a>
+                <a href="supply.html" class="nav-link py-2">Supply</a>
+                <a href="projects.html" class="nav-link py-2">Projects</a>
+                <a href="industries.html" class="nav-link py-2">Industries</a>
+                <a href="clients.html" class="nav-link py-2">Clients</a>
+                <a href="safety.html" class="nav-link py-2">Safety</a>
+                <a href="insights.html" class="nav-link py-2">Insights</a>
+                <a href="contact.html" class="nav-link py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-industries py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">Industries <span class="text-gold">We
+                    Serve</span></h1>
+            <p class="text-xl max-w-3xl mx-auto">Tailored electrical solutions for pharmaceutical, food, manufacturing,
+                infrastructure, and commercial sectors.</p>
+            <div class="w-24 h-1 bg-gold mx-auto mt-6"></div>
+        </div>
+    </section>
+
+    <!-- Industries Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-gold font-semibold tracking-wider">OUR EXPERTISE</span>
+                <h2 class="text-4xl font-bold text-maroon mt-2">Sector-Specific Electrical Solutions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">We understand the unique requirements of each industry
+                    and deliver compliant, efficient electrical systems.</p>
+            </div>
+
+            <!-- Industry Cards (5) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+
+                <!-- 1. Pharmaceutical Industries -->
+                <div
+                    class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 lg:col-start-1">
+                    <div class="img-wrapper">
+                        <img src="images/i1.webp"
+                            alt="Pharmaceutical industry" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-pills text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Pharmaceutical</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Specialized electrical installations for clean rooms, R&D labs,
+                            and production facilities. Compliance with GMP and safety standards.</p>
+                        <div class="mb-2"><span class="badge-industry"><i class="fas fa-check-circle mr-1"></i>Project
+                                examples:</span></div>
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>Biocon Biologics – HT panel & clean room electrical</li>
+                            <li>Anthem Biosciences – Flameproof & control panels</li>
+                            <li>BAL PHARMA – Testing & commissioning</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">Services: HT/LT, Panels,
+                                Earthing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Food Processing Industries -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200">
+                    <div class="img-wrapper">
+                        <img src="images/i2.webp"
+                            alt="Food processing" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-utensils text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Food Processing</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Hygienic and corrosion-resistant electrical systems for food
+                            plants. Cable trays, stainless steel panels, and lighting.</p>
+                        <div class="mb-2"><span class="badge-industry"><i class="fas fa-check-circle mr-1"></i>Project
+                                examples:</span></div>
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>ITC Limited – Complete electrical contracting</li>
+                            <li>LC PROCESS PVT. LTD. – AMC & shutdown</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">Services: Cable trays,
+                                Panels, Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Manufacturing Industries -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200">
+                    <div class="img-wrapper">
+                        <img src="images/i3.webp"
+                            alt="Manufacturing" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-industry text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Manufacturing</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Power distribution, motor control centers, and automation panels
+                            for heavy machinery and assembly lines.</p>
+                        <div class="mb-2"><span class="badge-industry"><i class="fas fa-check-circle mr-1"></i>Project
+                                examples:</span></div>
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>Sterling Micron – Panels & cable termination</li>
+                            <li>Atlas Copco – HT/LT & earthing</li>
+                            <li>Sam Tech – Street lighting & earthing</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">Services: MCC, PCC, HT/LT,
+                                Earthing</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. Renewable Energy -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200">
+                    <div class="img-wrapper">
+                        <img src="images/i6.webp" alt="Renewable Energy" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-solar-panel text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Renewable Energy</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Electrical installations and maintenance for solar and wind power plants,
+                            including panel wiring, transformers, and grid integration.</p>
+                
+                        <div class="mb-2">
+                            <span class="badge-industry">
+                                <i class="fas fa-check-circle mr-1"></i>Project examples:
+                            </span>
+                        </div>
+                
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>Solar power plant cable laying</li>
+                            <li>Wind turbine electrical installation</li>
+                            <li>Transformer & inverter commissioning</li>
+                        </ul>
+                
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">
+                                Services: Solar, Wind, Grid Integration
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Infrastructure Projects -->
+                <div
+                    class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 lg:col-start-2">
+                    <div class="img-wrapper">
+                        <img src="images/i4.webp"
+                            alt="Infrastructure" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-road text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Infrastructure</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Electrical works for bridges, flyovers, water treatment plants,
+                            and public utilities – reliable and durable.</p>
+                        <div class="mb-2"><span class="badge-industry"><i class="fas fa-check-circle mr-1"></i>Project
+                                examples:</span></div>
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>Bengaluru suburban rail – Cable works</li>
+                            <li>Municipal street lighting projects</li>
+                            <li>Industrial park infrastructure</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">Services: Street lighting,
+                                Cable laying</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Commercial Facilities -->
+                <div
+                    class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 lg:col-start-3">
+                    <div class="img-wrapper">
+                        <img src="images/i5.webp"
+                            alt="Commercial" class="industry-img">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-building text-4xl text-gold"></i>
+                            <h3 class="text-2xl font-bold text-maroon">Commercial Facilities</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">Electrical systems for IT parks, malls, hospitals, and offices –
+                            including lighting, panels, and backup power.</p>
+                        <div class="mb-2"><span class="badge-industry"><i class="fas fa-check-circle mr-1"></i>Project
+                                examples:</span></div>
+                        <ul class="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                            <li>Capgemini Tech Park – LT panels & lighting</li>
+                            <li>Commercial complex – cable trays & switchgear</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="text-xs bg-maroon text-white px-3 py-1 rounded-full">Services: Panels,
+                                Lighting, AMC</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-maroon py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Tailored electrical solutions for your industry
+            </h3>
+            <p class="text-gold text-lg mb-8">Talk to our engineers about your specific requirements.</p>
+            <a href="contact.html" class="btn-gold text-lg px-8 py-3">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   
+              
+
+    <!-- Footer -->
+<footer style="background-color: #800000;" class="text-white pt-12 pb-6">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <!-- Company Logo & Social -->
+        <div>
+            <a href="index.html">
+                <img src="images/mElogo.webp" alt="Maruthi Enterprises Logo" class="h-16 mb-4">
+            </a>
+            <p class="text-sm text-gray-300 mb-4">
+                Electrical Contracting & Industrial Electrical Solutions delivering
+                reliable and efficient power infrastructure services.
+            </p>
+            <div class="flex space-x-4 text-xl">
+                <a href="index.html" class="hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+                <a href="index.html" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="index.html" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="index.html" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
+                <a href="index.html" class="hover:text-blue-300 transition"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links (unchanged) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                <li><a href="about.html" class="hover:text-gold">About</a></li>
+                <li><a href="services.html" class="hover:text-gold">Services</a></li>
+                <li><a href="supply.html" class="hover:text-gold">Supply</a></li>
+                <li><a href="projects.html" class="hover:text-gold">Projects</a></li>
+                <li><a href="industries.html" class="hover:text-gold">Industries</a></li>
+                <li><a href="clients.html" class="hover:text-gold">Clients</a></li>
+                <li><a href="safety.html" class="hover:text-gold">Safety</a></li>
+                <li><a href="insights.html" class="hover:text-gold">Insights</a></li>
+                <li><a href="contact.html" class="hover:text-gold">Contacts</a></li>
+            </ul>
+        </div>
+
+        <!-- NEW: Electrical Services Column (right side of Quick Links) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Electrical Services</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="services.html" class="hover:text-gold">Electrical Contracting</a></li>
+                <li><a href="services.html" class="hover:text-gold">HT & LT Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Electrical Panel Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Cable Tray Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Testing & Commissioning</a></li>
+                <li><a href="services.html" class="hover:text-gold">AMC Shutdown Activities</a></li>
+                <li><a href="services.html" class="hover:text-gold">Electrical Maintenance</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Details (unchanged) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Contact</h3>
+            <p class="flex items-start space-x-3 text-sm mb-3">
+                <i class="fas fa-map-marker-alt text-gold mt-1"></i>
+                <span>No.156, GF, RK Tower Road, Kannika Nagar, Yarandahalli, Bommasandra, Bengaluru - 560099</span>
+            </p>
+        <p class="flex items-center space-x-3 text-sm mb-3">
+            <i class="fas fa-phone-alt text-gold"></i>
+            <a href="tel:+918722558698" class="hover:text-gold">+91 8722558698</a>
+            <a href="tel:+919686321608" class="hover:text-gold">+91 9686321608</a>
+        </p>
+        <p class="flex items-center space-x-3 text-sm">
+            <i class="fas fa-envelope text-gold"></i>
+            <a href="mailto:maruthienterprises844@gmail.com" class="hover:text-gold">maruthienterprises844@gmail.com</a>
+        </p>
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-600 mt-8 pt-4 text-center text-sm">
+        <p>
+            © 2025
+            <a href="index.html" class="text-gold hover:underline">Maruthi Enterprises</a>.
+            All Rights Reserved | Designed & Developed by
+            <a href="https://www.webvistara.co.in/" target="_blank" class="text-gold hover:underline">Web Vistara</a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Mobile menu toggle script (same as previous) -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                if (mobileMenu.style.transform === 'translateX(0px)' || mobileMenu.classList.contains('open')) {
+                    mobileMenu.style.transform = 'translateX(-100%)';
+                    mobileMenu.classList.remove('open');
+                    mobileMenu.classList.add('closed');
+                } else {
+                    mobileMenu.style.transform = 'translateX(0)';
+                    mobileMenu.classList.add('open');
+                    mobileMenu.classList.remove('closed');
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links and close mobile menu
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // close mobile menu if open
+                    if (mobileMenu && mobileMenu.style.transform === 'translateX(0px)') {
+                        mobileMenu.style.transform = 'translateX(-100%)';
+                        mobileMenu.classList.remove('open');
+                        mobileMenu.classList.add('closed');
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

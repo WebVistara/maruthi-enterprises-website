@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety & Quality | Maruthi Enterprises – Industrial Electrical Standards</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/mElogo.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/mElogo.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/mElogo.webp">
+    <!-- SEO meta -->
+    <meta name="description"
+        content="Maruthi Enterprises upholds the highest safety protocols, quality assurance, electrical compliance, and industrial testing standards.">
+    <!-- Tailwind + Font Awesome + custom styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --maroon: #800000;
+            --gold: #fbbf24;
+            --dark-grey: #1e293b;
+            --light-grey: #f8fafc;
+        }
+
+        .bg-maroon {
+            background-color: var(--maroon);
+        }
+
+        .text-maroon {
+            color: var(--maroon);
+        }
+
+        .border-maroon {
+            border-color: var(--maroon);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .bg-dark-grey {
+            background-color: var(--dark-grey);
+        }
+
+        .text-dark-grey {
+            color: var(--dark-grey);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--maroon);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+
+        .btn-outline-gold {
+            background-color: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-gold:hover {
+            background-color: var(--gold);
+            color: var(--maroon);
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 50;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5f;
+        }
+
+        .hero-safety {
+            background: linear-gradient(100deg, rgba(128, 0, 0, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%), url('images/img1.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .safety-icon {
+            font-size: 3rem;
+            color: var(--gold);
+        }
+
+        .custom-justify {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: -0.05em;
+}
+    </style>
+</head>
+
+<body class="bg-white text-dark-grey antialiased">
+
+    <!-- WhatsApp float -->
+    <a href="https://wa.me/918722558698" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header / Navigation (with Safety link) -->
+    <nav class="bg-maroon sticky top-0 z-40 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="images/mElogo.webp" alt="Maruthi Electrical Contractors" class="h-12">
+                </a>
+                <span class="text-white text-sm font-light hidden sm:block">Electrical Contractors</span>
+            </div>
+
+            <!-- Desktop Menu (added Safety) -->
+            <div class="hidden lg:flex space-x-6 text-white font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="supply.html" class="nav-link">Supply</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="clients.html" class="nav-link">Clients</a>
+                <a href="safety.html" class="nav-link">Safety</a>
+                <a href="insights.html" class="nav-link">Insights</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Icon -->
+            <div class="lg:hidden flex items-center">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (hidden by default, includes Safety) -->
+        <div id="mobile-menu"
+            class="lg:hidden bg-maroon px-4 pb-4 closed mobile-menu absolute w-full left-0 top-full shadow-xl transition-transform duration-300"
+            style="transform: translateX(-100%);">
+            <div class="flex flex-col space-y-3 text-white font-medium">
+                <a href="index.html" class="nav-link py-2">Home</a>
+                <a href="about.html" class="nav-link py-2">About</a>
+                <a href="services.html" class="nav-link py-2">Services</a>
+                <a href="supply.html" class="nav-link py-2">Supply</a>
+                <a href="projects.html" class="nav-link py-2">Projects</a>
+                <a href="industries.html" class="nav-link py-2">Industries</a>
+                <a href="clients.html" class="nav-link py-2">Clients</a>
+                <a href="safety.html" class="nav-link py-2">Safety</a>
+                <a href="insights.html" class="nav-link py-2">Insights</a>
+                <a href="contact.html" class="nav-link py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-safety py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">Safety & <span
+                    class="text-gold">Quality</span></h1>
+            <p class="text-xl max-w-3xl mx-auto">Our commitment to zero-harm, excellence, and compliance drives every
+                project.</p>
+            <div class="w-24 h-1 bg-gold mx-auto mt-6"></div>
+        </div>
+    </section>
+
+    <!-- Safety & Quality Grid -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <span class="text-gold font-semibold tracking-wider">OUR STANDARDS</span>
+            <h2 class="text-4xl font-bold text-maroon mt-2">Safety First, Quality Always</h2>
+            <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">We integrate rigorous safety protocols
+                and quality
+                checks into every phase of our work.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Safety Policy -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-shield-alt safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Safety Policy</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">We maintain a strict safety-first
+                    culture. Every employee
+                    undergoes regular training, and all sites follow mandatory PPE, toolbox talks, and risk
+                    assessments. We aim for zero lost-time incidents.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">ISO 45001 aligned</span>
+                </div>
+            </div>
+
+            <!-- Quality Assurance -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-clipboard-check safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Quality Assurance</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">Our QA process includes material
+                    inspection, vendor audits, and
+                    in-process checks. We adhere to ISO 9001 principles to ensure every installation meets or
+                    exceeds specifications.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">ISO 9001 practices</span>
+                </div>
+            </div>
+
+            <!-- Electrical Safety Compliance -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-bolt safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Electrical Safety Compliance</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">We strictly follow Indian
+                    Electricity Rules, CEIG regulations,
+                    and client safety protocols. All installations are tested for earthing, insulation, and
+                    protection before energization.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">CEIG / IE Rules</span>
+                </div>
+            </div>
+
+            <!-- Environmental Responsibility -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-leaf safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Environmental Responsibility</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">We are committed to
+                    environmentally responsible operations. Our teams follow
+                    strict guidelines for waste management, oil handling, and pollution prevention
+                    at all project sites.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">ISO 14001 Principles</span>
+                </div>
+            </div>
+
+            <!-- Testing & Inspection Standards -->
+            <div
+                class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8 lg:col-start-2">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-microscope safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Testing & Inspection</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">Comprehensive testing:
+                    thermography, megger, relay calibration,
+                    earth resistance, and pressure gauge calibration. We document all results for client records.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">NABL traceable equipment</span>
+                </div>
+            </div>
+
+            <!-- Industrial Safety Procedures -->
+            <div
+                class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-200 p-8 lg:col-start-3">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-hard-hat safety-icon"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon text-center mb-3">Industrial Safety Procedures</h3>
+                <p class="text-gray-700 text-justify custom-justify max-w-sm mx-auto">Permit-to-work systems,
+                    lockout-tagout, confined space entry
+                    procedures, and emergency response plans are implemented on all sites. Regular drills and safety
+                    audits ensure readiness.</p>
+                <div class="mt-4 flex justify-center">
+                    <span class="bg-gold/20 text-maroon text-xs px-3 py-1 rounded-full">PTW / LOTO</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Certifications & Accreditations -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-gold font-semibold">CERTIFICATIONS</span>
+                <h2 class="text-4xl font-bold text-maroon mt-2">We are certified & compliant</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 items-center">
+                <div class="bg-white p-6 rounded-xl shadow-md w-48 text-center card-hover">
+                    <i class="fas fa-certificate text-5xl text-gold mb-3"></i>
+                    <p class="font-bold">ISO 9001:2015</p>
+                    <p class="text-xs text-gray-500">Quality Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md w-48 text-center card-hover">
+                    <i class="fas fa-shield-virus text-5xl text-gold mb-3"></i>
+                    <p class="font-bold">ISO 45001:2018</p>
+                    <p class="text-xs text-gray-500">Occupational Health & Safety</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md w-48 text-center card-hover">
+                    <i class="fas fa-bolt text-5xl text-gold mb-3"></i>
+                    <p class="font-bold">CEIG Approved</p>
+                    <p class="text-xs text-gray-500">Electrical Safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Stats -->
+    <section class="py-12 bg-maroon text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div>
+                    <div class="text-4xl font-bold text-gold">15+</div>
+                    <div class="text-sm">Years without LTI</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-gold">500+</div>
+                    <div class="text-sm">Toolbox talks</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-gold">100%</div>
+                    <div class="text-sm">Compliance record</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-gold">50+</div>
+                    <div class="text-sm">Safety drills/year</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-maroon mb-4">Safety is not a priority, it's a value</h3>
+            <p class="text-dark-grey text-lg mb-8">Partner with us for risk-free, compliant electrical solutions.</p>
+            <a href="contact.html" class="btn-gold text-lg px-8 py-3">Discuss your project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+  
+
+    <!-- Footer -->
+<footer style="background-color: #800000;" class="text-white pt-12 pb-6">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <!-- Company Logo & Social -->
+        <div>
+            <a href="index.html">
+                <img src="images/mElogo.webp" alt="Maruthi Enterprises Logo" class="h-16 mb-4">
+            </a>
+            <p class="text-sm text-gray-300 mb-4">
+                Electrical Contracting & Industrial Electrical Solutions delivering
+                reliable and efficient power infrastructure services.
+            </p>
+            <div class="flex space-x-4 text-xl">
+                <a href="index.html" class="hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+                <a href="index.html" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="index.html" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="index.html" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
+                <a href="index.html" class="hover:text-blue-300 transition"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links (unchanged) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                <li><a href="about.html" class="hover:text-gold">About</a></li>
+                <li><a href="services.html" class="hover:text-gold">Services</a></li>
+                <li><a href="supply.html" class="hover:text-gold">Supply</a></li>
+                <li><a href="projects.html" class="hover:text-gold">Projects</a></li>
+                <li><a href="industries.html" class="hover:text-gold">Industries</a></li>
+                <li><a href="clients.html" class="hover:text-gold">Clients</a></li>
+                <li><a href="safety.html" class="hover:text-gold">Safety</a></li>
+                <li><a href="insights.html" class="hover:text-gold">Insights</a></li>
+                <li><a href="contact.html" class="hover:text-gold">Contacts</a></li>
+            </ul>
+        </div>
+
+        <!-- NEW: Electrical Services Column (right side of Quick Links) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Electrical Services</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="services.html" class="hover:text-gold">Electrical Contracting</a></li>
+                <li><a href="services.html" class="hover:text-gold">HT & LT Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Electrical Panel Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Cable Tray Installation</a></li>
+                <li><a href="services.html" class="hover:text-gold">Testing & Commissioning</a></li>
+                <li><a href="services.html" class="hover:text-gold">AMC Shutdown Activities</a></li>
+                <li><a href="services.html" class="hover:text-gold">Electrical Maintenance</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Details (unchanged) -->
+        <div>
+            <h3 class="text-gold font-bold text-lg mb-4">Contact</h3>
+            <p class="flex items-start space-x-3 text-sm mb-3">
+                <i class="fas fa-map-marker-alt text-gold mt-1"></i>
+                <span>No.156, GF, RK Tower Road, Kannika Nagar, Yarandahalli, Bommasandra, Bengaluru - 560099</span>
+            </p>
+            <p class="flex items-center space-x-3 text-sm mb-3">
+                <i class="fas fa-phone-alt text-gold"></i>
+                <a href="tel:+918722558698" class="hover:text-gold">+91 8722558698</a>
+                <a href="tel:+919686321608" class="hover:text-gold">+91 9686321608</a>
+            </p>
+            <p class="flex items-center space-x-3 text-sm">
+                <i class="fas fa-envelope text-gold"></i>
+                <a href="mailto:maruthienterprises844@gmail.com" class="hover:text-gold">maruthienterprises844@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-600 mt-8 pt-4 text-center text-sm">
+        <p>
+            © 2025
+            <a href="index.html" class="text-gold hover:underline">Maruthi Enterprises</a>.
+            All Rights Reserved | Designed & Developed by
+            <a href="https://www.webvistara.co.in/" target="_blank" class="text-gold hover:underline">Web Vistara</a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                if (mobileMenu.style.transform === 'translateX(0px)' || mobileMenu.classList.contains('open')) {
+                    mobileMenu.style.transform = 'translateX(-100%)';
+                    mobileMenu.classList.remove('open');
+                    mobileMenu.classList.add('closed');
+                } else {
+                    mobileMenu.style.transform = 'translateX(0)';
+                    mobileMenu.classList.add('open');
+                    mobileMenu.classList.remove('closed');
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links and close mobile menu
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // close mobile menu if open
+                    if (mobileMenu && mobileMenu.style.transform === 'translateX(0px)') {
+                        mobileMenu.style.transform = 'translateX(-100%)';
+                        mobileMenu.classList.remove('open');
+                        mobileMenu.classList.add('closed');
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

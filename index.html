@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruthi Enterprises | Industrial Electrical Contractors</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/mElogo.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/mElogo.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/mElogo.webp">
+    <!-- SEO meta -->
+    <meta name="description"
+        content="Government licensed electrical contractor in Bengaluru. HT/LT services up to 33KV, panel installation, AMC, and industrial electrical solutions across India.">
+    <meta name="keywords"
+        content="electrical contractor, HT LT services, 33KV, panel installation, cable tray, industrial electrical, Bengaluru">
+    <!-- Tailwind + fontawesome + custom styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --maroon: #800000;
+            --gold: #fbbf24;
+            --dark-grey: #1e293b;
+            --light-grey: #f8fafc;
+        }
+
+        .bg-maroon {
+            background-color: var(--maroon);
+        }
+
+        .text-maroon {
+            color: var(--maroon);
+        }
+
+        .border-maroon {
+            border-color: var(--maroon);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .bg-dark-grey {
+            background-color: var(--dark-grey);
+        }
+
+        .text-dark-grey {
+            color: var(--dark-grey);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--maroon);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+
+        .btn-outline-gold {
+            background-color: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-gold:hover {
+            background-color: var(--gold);
+            color: var(--maroon);
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 50;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5f;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .8
+            }
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 0.5rem;
+        }
+
+        /* industrial pattern */
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(128, 0, 0, 0.85) 0%, rgba(30, 41, 59, 0.7) 100%);
+        }
+
+
+
+        /* Marquee Animation */
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    min-width: 180px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee-item img {
+    height: 70px;
+    transition: 0.3s;
+}
+
+.marquee-item img:hover {
+    
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.custom-justify {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  word-spacing: -0.05em;
+}
+    </style>
+</head>
+
+<body class="bg-white text-dark-grey antialiased scroll-smooth">
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/918722558698" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Navigation -->
+    <nav class="bg-maroon sticky top-0 z-40 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="images/mElogo.webp" alt="Maruthi Electrical Contractors" class="h-12">
+                </a>
+                <span class="text-white text-sm font-light hidden sm:block">Electrical Contractors</span>
+            </div>
+
+            <div class="hidden lg:flex space-x-6 text-white font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="supply.html" class="nav-link">Supply</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="clients.html" class="nav-link">Clients</a>
+                <a href="safety.html" class="nav-link">Safety</a>
+                <a href="insights.html" class="nav-link">Insights</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <!-- mobile menu button (simplified) with ID for javascript -->
+            <div class="lg:hidden text-white cursor-pointer" id="menuBtn">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+        <!-- Mobile menu panel (hidden by default) -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-maroon px-4 pb-4 flex flex-col space-y-2 text-white font-medium">
+            <a href="index.html" class="nav-link py-2">Home</a>
+            <a href="about.html" class="nav-link py-2">About</a>
+            <a href="services.html" class="nav-link py-2">Services</a>
+            <a href="supply.html" class="nav-link py-2">Supply</a>
+            <a href="projects.html" class="nav-link py-2">Projects</a>
+            <a href="industries.html" class="nav-link py-2">Industries</a>
+            <a href="clients.html" class="nav-link py-2">Clients</a>
+            <a href="safety.html" class="nav-link py-2">Safety</a>
+            <a href="insights.html" class="nav-link py-2">Insights</a>
+            <a href="contact.html" class="nav-link py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 1️⃣ HOME SECTION -->
+    <section id="home" class="relative bg-cover bg-center"
+        style="background-image: url('images/img1.webp'); background-attachment: fixed;">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative container mx-auto px-4 py-24 md:py-32 text-white">
+            <div class="max-w-3xl animate__animated animate__fadeInUp">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4"><span
+                        class="text-gold">Trusted Industrial Electrical Contractors</span> & HT/LT Specialists</h1>
+                <p class="text-xl mb-8 text-gray-200">Government licensed up to 33KV · 15+ years of excellence · Pan
+                    India delivery</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="contact.html" class="btn-gold"><i class="fas fa-bolt mr-2"></i>Request Quote</a>
+                    <a href="services.html" class="btn-outline-gold">Our Services</a>
+                </div>
+            </div>
+            <!-- company intro summary preview -->
+            <div class="mt-16 grid md:grid-cols-3 gap-6 text-white">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-gold/30 card-hover">
+                    <i class="fas fa-certificate text-3xl text-gold mb-3"></i>
+                    <h3 class="text-xl font-bold">Govt. Licensed</h3>
+                    <p class="text-sm text-gray-200">Licensed electrical contractor for HT & LT systems up to 33KV.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-gold/30 card-hover">
+                    <i class="fas fa-industry text-3xl text-gold mb-3"></i>
+                    <h3 class="text-xl font-bold">Industrial Specialists</h3>
+                    <p class="text-sm text-gray-200">Pharma, food, manufacturing & infrastructure projects.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-gold/30 card-hover">
+                    <i class="fas fa-clock text-3xl text-gold mb-3"></i>
+                    <h3 class="text-xl font-bold">15+ Years</h3>
+                    <p class="text-sm text-gray-200">Trusted by leading organizations across India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-gold font-semibold tracking-wider">WHO WE ARE</span>
+                <h2 class="text-4xl font-bold text-maroon mt-2">About Maruthi Enterprises</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                <p class="text-lg text-gray-700 mb-6 text-justify custom-justify max-w-2xl">
+                    For over 15 years, <span class="font-bold text-maroon">Maruthi Enterprises</span> has been a premier government
+                    licensed electrical contractor based in Bengaluru, delivering trusted high  quality HT/LT electrical solutions across India.
+                </p>
+                
+                <p class="text-gray-600 mb-4 text-justify custom-justify max-w-2xl">
+                    Under the leadership of <span class="font-semibold">Mr. Kumar K H</span>, we have successfully executed complex
+                    electrical installations, system designs, and AMC services for pharmaceutical, food, and industrial sectors.
+                </p>
+
+
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div><i class="fas fa-check-circle text-gold"></i> <span class="font-medium">15+ years
+                                exp</span></div>
+                        <div><i class="fas fa-check-circle text-gold"></i> <span class="font-medium">Licensed up to
+                                33KV</span></div>
+                        <div><i class="fas fa-check-circle text-gold"></i> <span class="font-medium">Pan India</span>
+                        </div>
+                        <div><i class="fas fa-check-circle text-gold"></i> <span class="font-medium">100+
+                                projects</span></div>
+                    </div>
+                    <div class="mt-8 p-6 bg-gray-50 border-l-4 border-gold rounded">
+                        <p class="italic text-gray-700">"Our vision is to become India's leading electrical contracting
+                            company, renowned for professionalism, safety, and workmanship."</p>
+                        <p class="mt-2 font-bold text-maroon">— Mr. Kumar K H, Founder</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-maroon text-white p-6 rounded-lg card-hover"><i
+                            class="fas fa-eye text-3xl text-gold mb-2"></i>
+                        <h3 class="font-bold">Vision</h3>
+                        <p class="text-sm">Excellence in every connection</p>
+                    </div>
+                    <div class="bg-dark-grey text-white p-6 rounded-lg card-hover"><i
+                            class="fas fa-bullseye text-3xl text-gold mb-2"></i>
+                        <h3 class="font-bold">Mission</h3>
+                        <p class="text-sm">Quality, safety & satisfaction</p>
+                    </div>
+                    <div class="bg-gold text-maroon p-6 rounded-lg card-hover col-span-2"><i
+                            class="fas fa-trophy text-3xl mb-2"></i>
+                        <h3 class="font-bold">Govt. License: KA-EL/33KV/2024</h3>
+                        <p class="text-sm">Certified for high-tension installations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ SERVICES SECTION -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Our Core Services</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- service card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                    <i class="fas fa-bolt text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">Electrical Contracting</h3>
+                    <p class="text-gray-600 mt-2">Complete turnkey contracting for industrial & commercial projects,
+                        from design to commissioning.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                <i class="fas fa-broadcast-tower text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">HT & LT Installation (33KV)</h3>
+                    <p class="text-gray-600 mt-2">Erection, termination, testing of HT/LT lines, transformers,
+                        switchgears up to 33KV.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                    <i class="fas fa-table-cells-large text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">Electrical Panel Installation</h3>
+                    <p class="text-gray-600 mt-2">Design, supply and installation of control panels, MCC, PCC, and
+                        automation systems.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                    <i class="fas fa-tools text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">Cable Tray & Laying</h3>
+                    <p class="text-gray-600 mt-2">Fabrication and installation of cable trays, HT/LT cable laying,
+                        glanding & termination.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                    <i class="fas fa-flask text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">Testing & Commissioning</h3>
+                    <p class="text-gray-600 mt-2">Thermography, relay testing, earth pit testing, ACB/MCCB servicing,
+                        calibration.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-maroon">
+                    <i class="fas fa-calendar-check text-4xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-bold text-maroon">AMC & Shutdown</h3>
+                    <p class="text-gray-600 mt-2">Annual maintenance contracts, planned shutdown activities, and
+                        breakdown support.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="contact.html" class="btn-gold inline-block">Get a quote for service <i
+                        class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ ELECTRICAL SUPPLY PAGE -->
+    <section id="supply" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Electrical Products Supply</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border rounded-lg p-5 card-hover"><i class="fas fa-broadcast-tower text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">Cables & Accessories</h3>
+                    <p class="text-sm">Cables, glands, Belden, cable trays</p>
+                </div>
+                <div class="border rounded-lg p-5 card-hover"><i
+                        class="fas fa-fire-extinguisher text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">Flameproof Equipment</h3>
+                    <p class="text-sm">Lighting, push button stations, junction boxes</p>
+                </div>
+                <div class="border rounded-lg p-5 card-hover"><i class="fas fa-tools text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">Panels & Switchgear</h3>
+                    <p class="text-sm">Control panels, meters, changeover switches</p>
+                </div>
+                <div class="border rounded-lg p-5 card-hover"><i class="fas fa-lightbulb text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">LED Lighting & Solar</h3>
+                    <p class="text-sm">Industrial LED, solar systems, earthing</p>
+                </div>
+                <div class="border rounded-lg p-5 card-hover"><i class="fas fa-bolt text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">Earthing Systems</h3>
+                    <p class="text-sm">Chemical earthing, grounding materials</p>
+                </div>
+                <div class="border rounded-lg p-5 card-hover"><i class="fas fa-charging-station text-3xl text-gold"></i>
+                    <h3 class="font-bold text-lg mt-2">Solar Structures</h3>
+                    <p class="text-sm">Mounting structures, complete solar kits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ PROJECTS / PORTFOLIO -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Recent Projects</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow card-hover"><img
+                        src="images/im8.webp" alt="panel"
+                        class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Biocon Biologics</h4>
+                        <p class="text-sm">HT panel & AMC · Pharmaceutical</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow card-hover"><img
+                        src="images/img6.webp" alt="cable"
+                        class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">ITC Limited</h4>
+                        <p class="text-sm">Complete electrical contracting</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow card-hover"><img
+                        src="images/img7.webp" alt="factory"
+                        class="h-48 w-full object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Anthem Biosciences</h4>
+                        <p class="text-sm">Clean room electrical & panels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ INDUSTRIES WE SERVE -->
+    <section id="industries" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Industries We Serve</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+                <div class="p-6 border-2 border-gold/30 rounded-xl card-hover"><i
+                        class="fas fa-pills text-5xl text-maroon mb-3"></i>
+                    <h4 class="font-bold">Pharmaceutical</h4>
+                </div>
+                <div class="p-6 border-2 border-gold/30 rounded-xl card-hover"><i
+                        class="fas fa-utensils text-5xl text-maroon mb-3"></i>
+                    <h4 class="font-bold">Food Processing</h4>
+                </div>
+                <div class="p-6 border-2 border-gold/30 rounded-xl card-hover"><i
+                        class="fas fa-industry text-5xl text-maroon mb-3"></i>
+                    <h4 class="font-bold">Manufacturing</h4>
+                </div>
+                <div class="p-6 border-2 border-gold/30 rounded-xl card-hover"><i
+                        class="fas fa-road text-5xl text-maroon mb-3"></i>
+                    <h4 class="font-bold">Infrastructure</h4>
+                </div>
+                <div class="p-6 border-2 border-gold/30 rounded-xl card-hover"><i
+                        class="fas fa-building text-5xl text-maroon mb-3"></i>
+                    <h4 class="font-bold">Commercial</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7️⃣ CLIENTS PAGE -->
+    <section id="clients" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+    
+            <h2 class="text-4xl font-bold text-center text-maroon">Our Valued Clients</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+    
+            <div class="marquee">
+                <div class="marquee-track">
+    
+                    <!-- Client Logo -->
+                    <div class="marquee-item">
+                        <img src="images/img2-removebg.webp" alt="Biocon" style="height:120px">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/img3-removebg.webp" alt="Anthem" style="height:120px">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/img4-removebg.webp" alt="ITC Ltd" style="height:120px">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/Capgemini_Log.webp" alt="Capgemini">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/Atlas-Copco-Logo.webp" alt="Atlas Copco">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/sam_tech.webp" alt="Sam Tech" style="height:120px">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/bal_pharma-removebg-preview.webp" alt="Bal Pharma" style="height:120px">
+                    </div>
+
+                    <div class="marquee-item">
+                        <img src="images/lcprocess.webp" alt="lcprocess" style="height:120px">
+                    </div>
+    
+
+                   
+    
+                    <!-- Duplicate logos for seamless scroll -->
+                    <div class="marquee-item">
+                        <img src="images/img2-removebg.webp" alt="Biocon"style="height:120px">
+                    </div>
+                    
+                    <div class="marquee-item">
+                        <img src="images/img3-removebg.webp" alt="Anthem" style="height:120px">
+                    </div>
+                    
+                    <div class="marquee-item">
+                        <img src="images/img4-removebg.webp" alt="ITC Ltd" style="height:120px">
+                    </div>
+    
+                    <div class="marquee-item">
+                        <img src="images/Capgemini_Log.webp" alt="Capgemini">
+                    </div>
+
+                    <div class="marquee-item">
+                        <img src="images/Atlas-Copco-Logo.webp" alt="Atlas Copco">
+                    </div>
+                    
+                    <div class="marquee-item">
+                        <img src="images/sam_tech.webp" alt="Sam Tech" style="height:120px">
+                    </div>
+                    
+                    <div class="marquee-item">
+                        <img src="images/bal_pharma-removebg-preview.webp" alt="Bal Pharma" style="height:120px">
+                    </div>
+
+                    <div class="marquee-item">
+                        <img src="images/lcprocess.webp" alt="lcprocess" style="height:120px">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- 8️⃣ SAFETY & QUALITY -->
+<section id="safety" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+
+        <h2 class="text-4xl font-bold text-center text-maroon">Safety & Quality Commitment</h2>
+        <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Safety Policy -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 text-center card-hover">
+                <i class="fas fa-shield-alt text-4xl text-gold mb-4"></i>
+                <h3 class="text-xl font-bold text-maroon mb-2">Safety Policy</h3>
+                <p class="text-gray-600 text-sm">
+                    Strict adherence to industrial safety standards, PPE compliance, and toolbox talks.
+                </p>
+            </div>
+
+            <!-- Quality Assurance -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 text-center card-hover">
+                <i class="fas fa-clipboard-check text-4xl text-gold mb-4"></i>
+                <h3 class="text-xl font-bold text-maroon mb-2">Quality Assurance</h3>
+                <p class="text-gray-600 text-sm">
+                    ISO-aligned processes, material testing, and inspection at every stage.
+                </p>
+            </div>
+
+            <!-- Electrical Compliance -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 text-center card-hover">
+                <i class="fas fa-file-signature text-4xl text-gold mb-4"></i>
+                <h3 class="text-xl font-bold text-maroon mb-2">Electrical Compliance</h3>
+                <p class="text-gray-600 text-sm">
+                    CEIG approval, adherence to IE rules and Indian standards.
+                </p>
+            </div>
+
+            <!-- Testing Standards -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 text-center card-hover">
+                <i class="fas fa-microscope text-4xl text-gold mb-4"></i>
+                <h3 class="text-xl font-bold text-maroon mb-2">Testing Standards</h3>
+                <p class="text-gray-600 text-sm">
+                    Thermography, megger testing, relay calibration, and earth resistance measurement.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- 9️⃣ BLOG / INSIGHTS -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Industry Insights</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-xl shadow card-hover"><i
+                        class="fas fa-newspaper text-gold text-3xl mb-3"></i>
+                    <h3 class="font-bold">HT/LT Maintenance Tips</h3>
+                    <p class="text-sm text-gray-600">Regular thermography can prevent 70% of failures...</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow card-hover"><i
+                        class="fas fa-solar-panel text-gold text-3xl mb-3"></i>
+                    <h3 class="font-bold">Energy Efficiency in Factories</h3>
+                    <p class="text-sm text-gray-600">How to reduce industrial power bills with proper earthing.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow card-hover"><i
+                        class="fas fa-hard-hat text-gold text-3xl mb-3"></i>
+                    <h3 class="font-bold">Electrical Safety 2025</h3>
+                    <p class="text-sm text-gray-600">New compliance standards for pharma industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔟 CONTACT PAGE -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-maroon">Get In Touch</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-2 mb-12"></div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4"><i class="fas fa-map-pin text-3xl text-gold w-8"></i>
+                            <p><strong>Address:</strong> No.156, GF, RK Tower, Kannika Nagar, Yarandahalli, Bommasandra,
+                                Bengaluru - 560099</p>
+                        </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone-alt text-3xl text-gold w-8 mt-1"></i>
+                        <p>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+918722558698" class="hover:text-gold">+91 8722558698</a><br>
+                            <a href="tel:+919876543210" class="hover:text-gold">+91 9686321608</a>
+                        </p>
+                    </div>
+                        <div class="flex items-center gap-4"><i class="fas fa-envelope text-3xl text-gold w-8"></i>
+                            <p><strong>Email:</strong> maruthienterprises844@gmail.com</p>
+                        </div>
+                        <div class="flex items-center gap-4"><i class="fas fa-clock text-3xl text-gold w-8"></i>
+                            <p><strong>Office hours:</strong> Mon-Sat 9:00AM - 6:30PM</p>
+                        </div>
+                    </div>
+                    <!-- Contact form (frontend) -->
+                    <form class="mt-8 space-y-4">
+                        <input type="text" placeholder="Your name" class="w-full border border-gray-300 p-3 rounded">
+                        <input type="email" placeholder="Email" class="w-full border border-gray-300 p-3 rounded">
+                        <textarea rows="4" placeholder="Message"
+                            class="w-full border border-gray-300 p-3 rounded"></textarea>
+                        <button class="btn-gold">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.987654321!2d77.654321!3d12.8456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUwJzQ0LjQiTiA3N8KwMzknMTUuNiJF!5e0!3m2!1sen!2sin!4v1710000000000"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  
+
+    <footer style="background-color: #800000;" class="text-white pt-12 pb-6">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <!-- Company Logo & Social -->
+            <div>
+                <a href="index.html">
+                    <img src="images/mElogo.webp" alt="Maruthi Enterprises Logo" class="h-16 mb-4">
+                </a>
+                <p class="text-sm text-gray-300 mb-4">
+                    Electrical Contracting & Industrial Electrical Solutions delivering
+                    reliable and efficient power infrastructure services.
+                </p>
+                <div class="flex space-x-4 text-xl">
+                    <a href="index.html" class="hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="index.html" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="index.html" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="index.html" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="index.html" class="hover:text-blue-300 transition"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links (unchanged) -->
+            <div>
+                <h3 class="text-gold font-bold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gold">About</a></li>
+                    <li><a href="services.html" class="hover:text-gold">Services</a></li>
+                    <li><a href="supply.html" class="hover:text-gold">Supply</a></li>
+                    <li><a href="projects.html" class="hover:text-gold">Projects</a></li>
+                    <li><a href="industries.html" class="hover:text-gold">Industries</a></li>
+                    <li><a href="clients.html" class="hover:text-gold">Clients</a></li>
+                    <li><a href="safety.html" class="hover:text-gold">Safety</a></li>
+                    <li><a href="insights.html" class="hover:text-gold">Insights</a></li>
+                    <li><a href="contact.html" class="hover:text-gold">Contacts</a></li>
+                </ul>
+            </div>
+    
+            <!-- NEW: Electrical Services Column (right side of Quick Links) -->
+            <div>
+                <h3 class="text-gold font-bold text-lg mb-4">Electrical Services</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="services.html" class="hover:text-gold">Electrical Contracting</a></li>
+                    <li><a href="services.html" class="hover:text-gold">HT & LT Installation</a></li>
+                    <li><a href="services.html" class="hover:text-gold">Electrical Panel Installation</a></li>
+                    <li><a href="services.html" class="hover:text-gold">Cable Tray Installation</a></li>
+                    <li><a href="services.html" class="hover:text-gold">Testing & Commissioning</a></li>
+                    <li><a href="services.html" class="hover:text-gold">AMC Shutdown Activities</a></li>
+                    <li><a href="services.html" class="hover:text-gold">Electrical Maintenance</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Details (unchanged) -->
+            <div>
+                <h3 class="text-gold font-bold text-lg mb-4">Contact</h3>
+                <p class="flex items-start space-x-3 text-sm mb-3">
+                    <i class="fas fa-map-marker-alt text-gold mt-1"></i>
+                    <span>No.156, GF, RK Tower Road, Kannika Nagar, Yarandahalli, Bommasandra, Bengaluru - 560099</span>
+                </p>
+                <p class="flex items-center space-x-3 text-sm mb-3">
+                    <i class="fas fa-phone-alt text-gold"></i>
+                    <a href="tel:+918722558698" class="hover:text-gold">+91 8722558698</a>
+                    <a href="tel:+919686321608" class="hover:text-gold">+91 9686321608</a>
+                </p>
+                <p class="flex items-center space-x-3 text-sm">
+                    <i class="fas fa-envelope text-gold"></i>
+                    <a href="mailto:maruthienterprises844@gmail.com" class="hover:text-gold">maruthienterprises844@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-600 mt-8 pt-4 text-center text-sm">
+            <p>
+                © 2025
+                <a href="index.html" class="text-gold hover:underline">Maruthi Enterprises</a>.
+                All Rights Reserved | Designed & Developed by
+                <a href="https://www.webvistara.co.in/" target="_blank" class="text-gold hover:underline">Web Vistara</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Smooth scroll and animation (simple) -->
+    <script>
+        // Add active nav highlight on scroll (basic)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Optional: close if clicked outside (but we'll keep simple)
+            document.addEventListener('click', function (event) {
+                if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
