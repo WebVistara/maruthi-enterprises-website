@@ -25,6 +25,11 @@ Maruthi_Enterprises/
 │── clients.html
 │── gallery.html
 │── contact.html
+│── industries.html
+│── insights.html
+│── projects.html
+│── safety.html
+│── supply.html
 │── images/
 ```
 
