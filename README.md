@@ -76,7 +76,7 @@ This project can be easily deployed using:
 
 ## 👤 Author
 
-Developed by **Prasanna Mehata**
+Developed by **Web Vistara**
 
 ---
 
